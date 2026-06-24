@@ -1,0 +1,523 @@
+@ARTICLE{Wang2026-sc,
+  title     = "Multi-Modal Generative {AI}: Multi-Modal {LLMs}, Diffusions, and
+               the Unification",
+  author    = "Wang, Xin and Zhou, Yuwei and Huang, Bin and Chen, Hong and Zhu,
+               Wenwu",
+  journal   = "IEEE Trans. Circuits Syst. Video Technol.",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    =  36,
+  number    =  4,
+  pages     = "5621--5641",
+  abstract  = "Multi-modal generative AI (Artificial Intelligence) has attracted
+               increasing attention from both academia and industry.
+               Particularly, two dominant families of techniques have emerged:
+               i) Multi-modal large language models (LLMs) demonstrate
+               impressive ability for multi-modal understanding; and ii)
+               Diffusion models exhibit remarkable multi-modal powers in terms
+               of multi-modal generation. Therefore, this paper provides a
+               comprehensive overview of multi-modal generative AI, including
+               multi-modal LLMs, diffusions, and the unification for
+               understanding and generation. To lay a solid foundation for
+               unified models, we first provide a detailed review of both
+               multi-modal LLMs and diffusion models, respectively, including
+               their probabilistic modeling procedure, multi-modal architecture
+               design, and advanced applications to image/video LLMs as well as
+               text-to-image/video generation. Furthermore, we explore the
+               emerging efforts toward unified models for understanding and
+               generation. To achieve the unification of understanding and
+               generation, we investigate key designs including
+               autoregressive-based and diffusion-based modeling, as well as
+               dense and Mixture-of-Experts (MoE) architectures. We then
+               introduce several strategies for unified models, analyzing their
+               potential advantages and disadvantages. In addition, we summarize
+               the common datasets widely used for multi-modal generative AI
+               pretraining. Last but not least, we present several challenging
+               future research directions that may contribute to the ongoing
+               advancement of multi-modal generative AI.",
+  month     =  apr,
+  year      =  2026
+}
+
+@ARTICLE{Dang2025-pt,
+  title    = "Multi-agent collaboration via evolving orchestration",
+  author   = "Dang, Yufan and Qian, Chen and Luo, Xueheng and Fan, Jingru and
+              Xie, Zihao and Shi, Ruijie and Chen, Weize and Yang, Cheng and
+              Che, Xiaoyin and Tian, Ye and Xiong, Xuantang and Han, Lei and
+              Liu, Zhiyuan and Sun, Maosong",
+  journal  = "Proceedings of the 39th Conference on Neural Information
+              Processing Systems (NeurIPS 2025)",
+  year     =  2025,
+  language = "en"
+}
+
+@MISC{Ho_undated-po,
+  title    = "Denoising Diffusion Probabilistic Models",
+  author   = "Ho, Jonathan and Jain, Ajay and Abbeel, Pieter and Berkeley, U C",
+  abstract = "We present high quality image synthesis results using diffusion
+              probabilistic models, a class of latent variable models inspired
+              by considerations from nonequilibrium thermodynamics. Our best
+              results are obtained by training on a weighted variational bound
+              designed according to a novel connection between diffusion
+              probabilistic models and denoising score matching with Langevin
+              dynamics, and our models naturally admit a progressive lossy
+              decompression scheme that can be interpreted as a generalization
+              of autoregressive decoding. On the unconditional CIFAR10 dataset,
+              we obtain an Inception score of 9.46 and a state-of-the-art FID
+              score of 3.17. On 256x256 LSUN, we obtain sample quality similar
+              to ProgressiveGAN. Our implementation is available at
+              https://github.com/hojonathanho/diffusion."
+}
+
+@ARTICLE{Song2020-fq,
+  title         = "Denoising Diffusion Implicit Models",
+  author        = "Song, Jiaming and Meng, Chenlin and Ermon, Stefano",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Denoising diffusion probabilistic models (DDPMs) have
+                   achieved high quality image generation without adversarial
+                   training, yet they require simulating a Markov chain for many
+                   steps to produce a sample. To accelerate sampling, we present
+                   denoising diffusion implicit models (DDIMs), a more efficient
+                   class of iterative implicit probabilistic models with the
+                   same training procedure as DDPMs. In DDPMs, the generative
+                   process is defined as the reverse of a Markovian diffusion
+                   process. We construct a class of non-Markovian diffusion
+                   processes that lead to the same training objective, but whose
+                   reverse process can be much faster to sample from. We
+                   empirically demonstrate that DDIMs can produce high quality
+                   samples $10 \times$ to $50 \times$ faster in terms of
+                   wall-clock time compared to DDPMs, allow us to trade off
+                   computation for sample quality, and can perform semantically
+                   meaningful image interpolation directly in the latent space.",
+  month         =  oct,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG"
+}
+
+@ARTICLE{Singh2025-ju,
+  title         = "{CoDe}: Blockwise Control for Denoising Diffusion Models",
+  author        = "Singh, Anuj and Mukherjee, Sayak and Beirami, Ahmad and
+                   Jamali-Rad, Hadi",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Aligning diffusion models to downstream tasks often requires
+                   finetuning new models or gradient-based guidance at inference
+                   time to enable sampling from the reward-tilted posterior. In
+                   this work, we explore a simple inference-time gradient-free
+                   guidance approach, called controlled denoising (CoDe), that
+                   circumvents the need for differentiable guidance functions
+                   and model finetuning. CoDe is a blockwise sampling method
+                   applied during intermediate denoising steps, allowing for
+                   alignment with downstream rewards. Our experiments
+                   demonstrate that, despite its simplicity, CoDe offers a
+                   favorable trade-off between reward alignment, prompt
+                   instruction following, and inference cost, achieving a
+                   competitive performance against the state-of-the-art
+                   baselines. Our code is available at:
+                   https://github.com/anujinho/code.",
+  month         =  feb,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  language      = "en"
+}
+
+@ARTICLE{Goyal2025-sr,
+  title         = "Unified control for inference-time guidance of denoising
+                   diffusion models",
+  author        = "Goyal, Maurya and Singh, Anuj and Jamali-Rad, Hadi",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Aligning diffusion model outputs with downstream objectives
+                   is essential for improving task-specific performance.
+                   Broadly, inference-time training-free approaches for aligning
+                   diffusion models can be categorized into two main strategies:
+                   sampling-based methods, which explore multiple candidate
+                   outputs and select those with higher reward signals, and
+                   gradient-guided methods, which use differentiable reward
+                   approximations to directly steer the generation process. In
+                   this work, we propose a universal algorithm, UniCoDe, which
+                   brings together the strengths of sampling and gradient-based
+                   guidance into a unified framework. UniCoDe integrates local
+                   gradient signals during sampling, thereby addressing the
+                   sampling inefficiency inherent in complex reward-based
+                   sampling approaches. By cohesively combining these two
+                   paradigms, UniCoDe enables more efficient sampling while
+                   offering better trade-offs between reward alignment and
+                   divergence from the diffusion unconditional prior. Empirical
+                   results demonstrate that UniCoDe remains competitive with
+                   state-of-the-art baselines across a range of tasks. The code
+                   is available at https://github.com/maurya-goyal10/UniCoDe",
+  month         =  dec,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV"
+}
+
+@ARTICLE{Rastegar2025-sx,
+  title         = "{InfSplign}: Inference-time spatial alignment of
+                   text-to-image diffusion models",
+  author        = "Rastegar, Sarah and Chatalbasheva, Violeta and Falkena,
+                   Sieger and Singh, Anuj and Wang, Yanbo and Gokhale, Tejas and
+                   Palangi, Hamid and Jamali-Rad, Hadi",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Text-to-image (T2I) diffusion models generate high-quality
+                   images but often fail to capture the spatial relations
+                   specified in text prompts. This limitation can be traced to
+                   two factors: lack of fine-grained spatial supervision in
+                   training data and inability of text embeddings to encode
+                   spatial semantics. We introduce InfSplign, a training-free
+                   inference-time method that improves spatial alignment by
+                   adjusting the noise through a compound loss in every
+                   denoising step. Proposed loss leverages different levels of
+                   cross-attention maps extracted from the backbone decoder to
+                   enforce accurate object placement and a balanced object
+                   presence during sampling. The method is lightweight,
+                   plug-and-play, and compatible with any diffusion backbone.
+                   Our comprehensive evaluations on VISOR and T2I-CompBench show
+                   that InfSplign establishes a new state-of-the-art (to the
+                   best of our knowledge), achieving substantial performance
+                   gains over the strongest existing inference-time baselines
+                   and even outperforming the fine-tuning-based methods.
+                   Codebase is available at GitHub.",
+  month         =  dec,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV"
+}
+
+@ARTICLE{Brohan2023-ew,
+  title         = "{RT}-2: Vision-language-action models transfer web knowledge
+                   to robotic control",
+  author        = "Brohan, Anthony and Brown, Noah and Carbajal, Justice and
+                   Chebotar, Yevgen and Chen, Xi and Choromanski, Krzysztof and
+                   Ding, Tianli and Driess, Danny and Dubey, Avinava and Finn,
+                   Chelsea and Florence, Pete and Fu, Chuyuan and Arenas, Montse
+                   Gonzalez and Gopalakrishnan, Keerthana and Han, Kehang and
+                   Hausman, Karol and Herzog, Alexander and Hsu, Jasmine and
+                   Ichter, Brian and Irpan, Alex and Joshi, Nikhil and Julian,
+                   Ryan and Kalashnikov, Dmitry and Kuang, Yuheng and Leal,
+                   Isabel and Lee, Lisa and Lee, Tsang-Wei Edward and Levine,
+                   Sergey and Lu, Yao and Michalewski, Henryk and Mordatch, Igor
+                   and Pertsch, Karl and Rao, Kanishka and Reymann, Krista and
+                   Ryoo, Michael and Salazar, Grecia and Sanketi, Pannag and
+                   Sermanet, Pierre and Singh, Jaspiar and Singh, Anikait and
+                   Soricut, Radu and Tran, Huong and Vanhoucke, Vincent and
+                   Vuong, Quan and Wahid, Ayzaan and Welker, Stefan and
+                   Wohlhart, Paul and Wu, Jialin and Xia, Fei and Xiao, Ted and
+                   Xu, Peng and Xu, Sichun and Yu, Tianhe and Zitkovich, Brianna",
+  journal       = "arXiv [cs.RO]",
+  abstract      = "We study how vision-language models trained on Internet-scale
+                   data can be incorporated directly into end-to-end robotic
+                   control to boost generalization and enable emergent semantic
+                   reasoning. Our goal is to enable a single end-to-end trained
+                   model to both learn to map robot observations to actions and
+                   enjoy the benefits of large-scale pretraining on language and
+                   vision-language data from the web. To this end, we propose to
+                   co-fine-tune state-of-the-art vision-language models on both
+                   robotic trajectory data and Internet-scale vision-language
+                   tasks, such as visual question answering. In contrast to
+                   other approaches, we propose a simple, general recipe to
+                   achieve this goal: in order to fit both natural language
+                   responses and robotic actions into the same format, we
+                   express the actions as text tokens and incorporate them
+                   directly into the training set of the model in the same way
+                   as natural language tokens. We refer to such category of
+                   models as vision-language-action models (VLA) and instantiate
+                   an example of such a model, which we call RT-2. Our extensive
+                   evaluation (6k evaluation trials) shows that our approach
+                   leads to performant robotic policies and enables RT-2 to
+                   obtain a range of emergent capabilities from Internet-scale
+                   training. This includes significantly improved generalization
+                   to novel objects, the ability to interpret commands not
+                   present in the robot training data (such as placing an object
+                   onto a particular number or icon), and the ability to perform
+                   rudimentary reasoning in response to user commands (such as
+                   picking up the smallest or largest object, or the one closest
+                   to another object). We further show that incorporating chain
+                   of thought reasoning allows RT-2 to perform multi-stage
+                   semantic reasoning, for example figuring out which object to
+                   pick up for use as an improvised hammer (a rock), or which
+                   type of drink is best suited for someone who is tired (an
+                   energy drink).",
+  month         =  jul,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.RO"
+}
+
+@ARTICLE{Kim2024-tj,
+  title         = "{OpenVLA}: An Open-Source Vision-Language-Action Model",
+  author        = "Kim, Moo Jin and Pertsch, Karl and Karamcheti, Siddharth and
+                   Xiao, Ted and Balakrishna, Ashwin and Nair, Suraj and
+                   Rafailov, Rafael and Foster, Ethan and Lam, Grace and
+                   Sanketi, Pannag and Vuong, Quan and Kollar, Thomas and
+                   Burchfiel, Benjamin and Tedrake, Russ and Sadigh, Dorsa and
+                   Levine, Sergey and Liang, Percy and Finn, Chelsea",
+  journal       = "arXiv [cs.RO]",
+  abstract      = "Large policies pretrained on a combination of Internet-scale
+                   vision-language data and diverse robot demonstrations have
+                   the potential to change how we teach robots new skills:
+                   rather than training new behaviors from scratch, we can
+                   fine-tune such vision-language-action (VLA) models to obtain
+                   robust, generalizable policies for visuomotor control. Yet,
+                   widespread adoption of VLAs for robotics has been challenging
+                   as 1) existing VLAs are largely closed and inaccessible to
+                   the public, and 2) prior work fails to explore methods for
+                   efficiently fine-tuning VLAs for new tasks, a key component
+                   for adoption. Addressing these challenges, we introduce
+                   OpenVLA, a 7B-parameter open-source VLA trained on a diverse
+                   collection of 970k real-world robot demonstrations. OpenVLA
+                   builds on a Llama 2 language model combined with a visual
+                   encoder that fuses pretrained features from DINOv2 and
+                   SigLIP. As a product of the added data diversity and new
+                   model components, OpenVLA demonstrates strong results for
+                   generalist manipulation, outperforming closed models such as
+                   RT-2-X (55B) by 16.5\% in absolute task success rate across
+                   29 tasks and multiple robot embodiments, with 7x fewer
+                   parameters. We further show that we can effectively fine-tune
+                   OpenVLA for new settings, with especially strong
+                   generalization results in multi-task environments involving
+                   multiple objects and strong language grounding abilities, and
+                   outperform expressive from-scratch imitation learning methods
+                   such as Diffusion Policy by 20.4\%. We also explore compute
+                   efficiency; as a separate contribution, we show that OpenVLA
+                   can be fine-tuned on consumer GPUs via modern low-rank
+                   adaptation methods and served efficiently via quantization
+                   without a hit to downstream success rate. Finally, we release
+                   model checkpoints, fine-tuning notebooks, and our PyTorch
+                   codebase with built-in support for training VLAs at scale on
+                   Open X-Embodiment datasets.",
+  month         =  jun,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.RO",
+  language      = "en"
+}
+
+@ARTICLE{Han2025-kc,
+  title         = "Spatial Transport Optimization by Repositioning Attention Map
+                   for training-free text-to-image synthesis",
+  author        = "Han, Woojung and Lee, Yeonkyung and Kim, Chanyoung and Park,
+                   Kwanghyun and Hwang, Seong Jae",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Diffusion-based text-to-image (T2I) models have recently
+                   excelled in high-quality image generation, particularly in a
+                   training-free manner, enabling cost-effective adaptability
+                   and generalization across diverse tasks. However, while the
+                   existing methods have been continuously focusing on several
+                   challenges, such as ``missing objects'' and ``mismatched
+                   attributes,'' another critical issue of ``mislocated
+                   objects'' remains where generated spatial positions fail to
+                   align with text prompts. Surprisingly, ensuring such
+                   seemingly basic functionality remains challenging in popular
+                   T2I models due to the inherent difficulty of imposing
+                   explicit spatial guidance via text forms. To address this, we
+                   propose STORM (Spatial Transport Optimization by
+                   Repositioning Attention Map), a novel training-free approach
+                   for spatially coherent T2I synthesis. STORM employs Spatial
+                   Transport Optimization (STO), rooted in optimal transport
+                   theory, to dynamically adjust object attention maps for
+                   precise spatial adherence, supported by a Spatial Transport
+                   (ST) Cost function that enhances spatial understanding. Our
+                   analysis shows that integrating spatial awareness is most
+                   effective in the early denoising stages, while later phases
+                   refine details. Extensive experiments demonstrate that STORM
+                   surpasses existing methods, effectively mitigating mislocated
+                   objects while improving missing and mismatched attributes,
+                   setting a new benchmark for spatial alignment in T2I
+                   synthesis.",
+  month         =  mar,
+  year          =  2025,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV"
+}
+
+@ARTICLE{Ye2024-jq,
+  title         = "{TFG}: Unified training-free guidance for diffusion models",
+  author        = "Ye, Haotian and Lin, Haowei and Han, Jiaqi and Xu, Minkai and
+                   Liu, Sheng and Liang, Yitao and Ma, Jianzhu and Zou, James
+                   and Ermon, Stefano",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Given an unconditional diffusion model and a predictor for a
+                   target property of interest (e.g., a classifier), the goal of
+                   training-free guidance is to generate samples with desirable
+                   target properties without additional training. Existing
+                   methods, though effective in various individual applications,
+                   often lack theoretical grounding and rigorous testing on
+                   extensive benchmarks. As a result, they could even fail on
+                   simple tasks, and applying them to a new problem becomes
+                   unavoidably difficult. This paper introduces a novel
+                   algorithmic framework encompassing existing methods as
+                   special cases, unifying the study of training-free guidance
+                   into the analysis of an algorithm-agnostic design space. Via
+                   theoretical and empirical investigation, we propose an
+                   efficient and effective hyper-parameter searching strategy
+                   that can be readily applied to any downstream task. We
+                   systematically benchmark across 7 diffusion models on 16
+                   tasks with 40 targets, and improve performance by 8.5\% on
+                   average. Our framework and benchmark offer a solid foundation
+                   for conditional generation in a training-free manner.",
+  month         =  sep,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  language      = "en"
+}
+
+@ARTICLE{Kim2026-wg,
+  title         = "{TeamBench}: Evaluating agent coordination under enforced
+                   role separation",
+  author        = "Kim, Yubin and Park, Chanwoo and Kim, Taehan and Park, Eugene
+                   and Schmidgall, Samuel and Rahman, Salman and Park, Chunjong
+                   and Breazeal, Cynthia and Liu, Xin and Palangi, Hamid and
+                   Park, Hae Won and McDuff, Daniel",
+  journal       = "arXiv [cs.AI]",
+  abstract      = "Agent systems often decompose a task across multiple roles,
+                   but these roles are typically specified by prompts rather
+                   than enforced by access controls. Without enforcement, a team
+                   pass rate can mask whether agents actually coordinated or
+                   whether one role effectively did another role's work. We
+                   present TeamBench, a benchmark with 851 task templates and
+                   931 seeded instances for evaluating agent coordination under
+                   operating system-enforced role separation. TeamBench
+                   separates specification access, workspace editing, and final
+                   certification across Planner, Executor, and Verifier roles,
+                   so that no role can read the full requirements, modify the
+                   workspace, and certify the final answer. Prompt-only and
+                   sandbox-enforced teams reach statistically indistinguishable
+                   pass rates, but prompt-only runs produce 3.6 times more cases
+                   where the verifier attempts to edit the executor's code.
+                   Verifiers approve 49\% of submissions that fail the
+                   deterministic grader, and removing the verifier improves mean
+                   partial score in the ablation. Team value is also
+                   conditional. Teams benefit when single agents struggle, but
+                   hurt when single agents already perform well. A 40-session
+                   human study under the same role separation shows that our
+                   benchmark exposes interaction patterns that pass rate misses.
+                   Solo participants work through the task directly, human
+                   participants paired with agents often collapse into quick
+                   approval, and human teams spend more effort coordinating
+                   missing information across roles.",
+  month         =  may,
+  year          =  2026,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.AI",
+  language      = "en"
+}
+
+@ARTICLE{Wang2024-za,
+  title         = "Equivariant Diffusion Policy",
+  author        = "Wang, Dian and Hart, Stephen and Surovik, David and
+                   Kelestemur, Tarik and Huang, Haojie and Zhao, Haibo and
+                   Yeatman, Mark and Wang, Jiuguang and Walters, Robin and
+                   Platt, Robert",
+  journal       = "arXiv [cs.RO]",
+  abstract      = "Recent work has shown diffusion models are an effective
+                   approach to learning the multimodal distributions arising
+                   from demonstration data in behavior cloning. However, a
+                   drawback of this approach is the need to learn a denoising
+                   function, which is significantly more complex than learning
+                   an explicit policy. In this work, we propose Equivariant
+                   Diffusion Policy, a novel diffusion policy learning method
+                   that leverages domain symmetries to obtain better sample
+                   efficiency and generalization in the denoising function. We
+                   theoretically analyze the $\mathrm{SO}(2)$ symmetry of full
+                   6-DoF control and characterize when a diffusion model is
+                   $\mathrm{SO}(2)$-equivariant. We furthermore evaluate the
+                   method empirically on a set of 12 simulation tasks in
+                   MimicGen, and show that it obtains a success rate that is, on
+                   average, 21.9\% higher than the baseline Diffusion Policy. We
+                   also evaluate the method on a real-world system to show that
+                   effective policies can be learned with relatively few
+                   training samples, whereas the baseline Diffusion Policy
+                   cannot.",
+  month         =  jul,
+  year          =  2024,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.RO"
+}
+
+@ARTICLE{Dosovitskiy2020-ud,
+  title         = "An image is worth {16x16} words: Transformers for image
+                   recognition at scale",
+  author        = "Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov,
+                   Alexander and Weissenborn, Dirk and Zhai, Xiaohua and
+                   Unterthiner, Thomas and Dehghani, Mostafa and Minderer,
+                   Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit,
+                   Jakob and Houlsby, Neil",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "While the Transformer architecture has become the de-facto
+                   standard for natural language processing tasks, its
+                   applications to computer vision remain limited. In vision,
+                   attention is either applied in conjunction with convolutional
+                   networks, or used to replace certain components of
+                   convolutional networks while keeping their overall structure
+                   in place. We show that this reliance on CNNs is not necessary
+                   and a pure transformer applied directly to sequences of image
+                   patches can perform very well on image classification tasks.
+                   When pre-trained on large amounts of data and transferred to
+                   multiple mid-sized or small image recognition benchmarks
+                   (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT)
+                   attains excellent results compared to state-of-the-art
+                   convolutional networks while requiring substantially fewer
+                   computational resources to train.",
+  month         =  oct,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV"
+}
+
+@ARTICLE{Peebles2022-nh,
+  title         = "Scalable diffusion models with transformers",
+  author        = "Peebles, William and Xie, Saining",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "We explore a new class of diffusion models based on the
+                   transformer architecture. We train latent diffusion models of
+                   images, replacing the commonly-used U-Net backbone with a
+                   transformer that operates on latent patches. We analyze the
+                   scalability of our Diffusion Transformers (DiTs) through the
+                   lens of forward pass complexity as measured by Gflops. We
+                   find that DiTs with higher Gflops -- through increased
+                   transformer depth/width or increased number of input tokens
+                   -- consistently have lower FID. In addition to possessing
+                   good scalability properties, our largest DiT-XL/2 models
+                   outperform all prior diffusion models on the
+                   class-conditional ImageNet 512x512 and 256x256 benchmarks,
+                   achieving a state-of-the-art FID of 2.27 on the latter.",
+  month         =  dec,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV"
+}
+
+@MISC{Weng2021-jc,
+  title    = "What are diffusion models?",
+  author   = "Weng, Lilian",
+  year     =  2021,
+  language = "en"
+}
+
+@INPROCEEDINGS{Caron2021-in,
+  title     = "Emerging properties in self-supervised vision transformers",
+  author    = "Caron, Mathilde and Touvron, Hugo and Misra, Ishan and Jegou,
+               Herve and Mairal, Julien and Bojanowski, Piotr and Joulin, Armand",
+  booktitle = "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  publisher = "IEEE",
+  abstract  = "In this paper, we question if self-supervised learning provides
+               new properties to Vision Transformer (ViT) [16] that stand out
+               compared to convolutional networks (convnets). Beyond the fact
+               that adapting self-supervised methods to this architecture works
+               particularly well, we make the following observations: first,
+               self-supervised ViT features contain explicit information about
+               the semantic segmentation of an image, which does not emerge as
+               clearly with supervised ViTs, nor with convnets. Second, these
+               features are also excellent k-NN classifiers, reaching 78.3\%
+               top-1 on ImageNet with a small ViT. Our study also underlines the
+               importance of momentum encoder [26], multi-crop training [9], and
+               the use of small patches with ViTs. We implement our findings
+               into a simple self-supervised method, called DINO, which we
+               interpret as a form of self-distillation with no labels. We show
+               the synergy between DINO and ViTs by achieving 80.1\% top-1 on
+               ImageNet in linear evaluation with ViT-Base.",
+  month     =  oct,
+  year      =  2021
+}
